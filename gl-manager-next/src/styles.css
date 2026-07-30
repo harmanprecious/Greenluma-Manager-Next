@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 216 24% 4%;
+  --foreground: 210 40% 98%;
+  --card: 210 18% 8%;
+  --card-foreground: 210 40% 98%;
+  --primary: 84 80% 62%;
+  --primary-foreground: 222 47% 11%;
+  --secondary: 42 92% 66%;
+  --secondary-foreground: 222 47% 11%;
+  --muted: 210 14% 12%;
+  --muted-foreground: 214 13% 66%;
+  --accent: 84 80% 62%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 210 13% 18%;
+  --input: 210 13% 16%;
+  --ring: 84 80% 62%;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 1040px;
+  min-height: 680px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #080a0d;
+  color: hsl(var(--foreground));
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+.font-black {
+  font-weight: 750;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+input {
+  color: inherit;
+}
+
+select.carbon-select {
+  color-scheme: dark;
+  border: 0;
+  cursor: pointer;
+}
+
+select.carbon-select option {
+  background: #101418;
+  color: #e5e7eb;
+}
+
+select.carbon-select:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(163, 230, 53, 0.22);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: content-box;
+}

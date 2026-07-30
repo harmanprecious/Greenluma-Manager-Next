@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Frontend build output
+dist/
+
+# Tauri/Rust build output
+target/
+gl-manager-next/src-tauri/target/
+
+# Cloudflare local state
+.wrangler/
+worker/.wrangler/
+
+# Private deployment worker
+worker/
+
+# Logs and local env
+*.log
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+
+# Local release artifacts
+releases/
+outputs/
